@@ -1,0 +1,10 @@
+{
+	"extends": "stylelint-config-sass-guidelines",
+
+	"rules": {
+		"declaration-no-important": true,
+		"indentation": ["tab", {"ignore": ["inside-parens"]}],
+		"max-nesting-depth" : [2, { "ignoreAtRules": ["media"] }]
+	}
+
+}

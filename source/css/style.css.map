@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"AAAA;EACC,+BAAA;ACCD;;ADEA;EACC,mCAAA;ACCD","file":"style.css","sourcesContent":[":root {\n\t--main-color: hsl(12, 35%, 85%);\n}\n\nbody {\n\tbackground-color: var(--main-color);\n}\n",":root {\n  --main-color: hsl(12, 35%, 85%);\n}\n\nbody {\n  background-color: var(--main-color);\n}"]}

@@ -1,0 +1,31 @@
+{
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "Dmitriy Korbut - frontend developer",
+	"scripts": {
+		"editorconfig": "editorconfig-cli",
+		"stylelint": "stylelint \"source/sass/**/*.scss\"",
+		"test": "npm run editorconfig && npm run stylelint",
+		"build": "gulp styles",
+		"start": "gulp"
+	},
+	"author": "",
+	"license": "ISC",
+	"browserslist": [
+		"last 6 versions"
+	],
+	"devDependencies": {
+		"@htmlacademy/editorconfig-cli": "^1.0.0",
+		"autoprefixer": "^10.3.7",
+		"browser-sync": "^2.27.5",
+		"gulp": "^4.0.2",
+		"gulp-plumber": "^1.2.1",
+		"gulp-postcss": "^9.0.1",
+		"gulp-sass": "^5.0.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"postcss": "^8.3.9",
+		"sass": "^1.43.2",
+		"stylelint": "^14.0.0",
+		"stylelint-config-sass-guidelines": "^8.0.0"
+	}
+}
