@@ -1,0 +1,12 @@
+@import "../common/mixins";
+
+.page-wrapper {
+	margin: auto;
+	width: 100%;
+
+	@media (min-width: $medium-size) {
+		width: 80vw;
+		height: calc(100vh - 200px);
+		@include window-view;
+	}
+}

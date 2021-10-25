@@ -1,7 +1,6 @@
-:root {
-	--main-color: hsl(12, 35%, 85%);
-}
+@import "common/variables";
+@import "common/common";
+@import "blocks/page";
+@import "blocks/page-wrapper";
+@import "blocks/container";
 
-body {
-	background-color: var(--main-color);
-}

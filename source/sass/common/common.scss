@@ -1,0 +1,18 @@
+:root {
+	--bg-color: #{$bg-color};
+	--bg-paper-color: #{$bg-paper-color};
+	--bg-window: #{$bg-window};
+	--primary-color: #{$primary-color};
+	--primary-color-dark: #{$primary-color-dark};
+	--primary-color-light: #{$primary-color-light};
+	--primary-border-color: #{$primary-border-color};
+	--secondary-color: #{$secondary-color};
+	--secondary-color-dark: #{$secondary-color-dark};
+	--secondary-color-light:#{$secondary-color-light};
+	--primary-text-color: #{$primary-text-color};
+	--secondary-text-color: #{$secondary-text-color};
+	--main-gradient: #{$main-gradient};
+	--small-size: #{$small-size};
+	--medium-size: #{$medium-size};
+	--large-size: #{$large-size};
+}

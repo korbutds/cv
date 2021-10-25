@@ -1,8 +1,91 @@
 :root {
-  --main-color: hsl(12, 35%, 85%);
+  --bg-color: white;
+  --bg-paper-color: whitesmoke;
+  --bg-window: rgba(255, 255, 255, 0.2);
+  --primary-color: #28b5f6;
+  --primary-color-dark: #0084c2;
+  --primary-color-light: #75e8ff;
+  --primary-border-color: rgba(117, 232, 255, 0.3);
+  --secondary-color: #f66928;
+  --secondary-color-dark: #bd3900;
+  --secondary-color-light:#ff9a57;
+  --primary-text-color: black;
+  --secondary-text-color: white;
+  --main-gradient: linear-gradient(to top left, #75e8ff, #ff9a57);
+  --small-size: 375px;
+  --medium-size: 768px;
+  --large-size: 1068px;
 }
 
-body {
-  background-color: var(--main-color);
+.page {
+  height: 100vh;
+  width: 100vw;
+}
+
+.page__body {
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: var(--small-size);
+  height: 100%;
+  background-color: var(--primary-color);
+  overflow: hidden;
+  color: var(--primary-text-color);
+  background-image: url("../img/SuperToroid-Yellow-Glossy.png");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+}
+.page__body::after, .page__body::before {
+  position: absolute;
+  content: "";
+  display: block;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 25%;
+  background: var(--main-gradient);
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  -webkit-filter: blur(14rem);
+          filter: blur(14rem);
+  z-index: -1;
+}
+.page__body::before {
+  top: 0;
+  left: 0;
+  width: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.page__body::after {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(50%, 50%);
+      -ms-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+.page-wrapper {
+  margin: auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .page-wrapper {
+    width: 80vw;
+    height: calc(100vh - 200px);
+    border: 1px solid var(--primary-border-color);
+    border-radius: 1rem;
+    background-color: var(--bg-window);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+}
+
+.container {
+  width: auto;
+  padding: 0 1rem;
 }
 /*# sourceMappingURL=style.css.map */
